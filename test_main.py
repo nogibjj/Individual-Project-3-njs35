@@ -10,6 +10,7 @@ def test_run_job():
     access_token = os.getenv("DATABRICKS_ACCESS_TOKEN")
     job_id = os.getenv("PIPELINE_JOB_ID")
     server_host_name = os.getenv("SERVER_HOSTNAME")
+    print(f"Access Token: {access_token}, Job ID: {job_id}, Server Host Name: {server_host_name}")
     response = run_job(access_token, job_id, server_host_name)
 
     assert response == 200
