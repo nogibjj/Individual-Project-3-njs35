@@ -11,7 +11,7 @@ def test_run_job():
     job_id = os.getenv("PIPELINE_JOB_ID")
     server_host_name = os.getenv("SERVER_HOSTNAME")
 
-    # Check if environment variables are set
+    # Check if environment variables are set 
     assert access_token is not None, "DATABRICKS_ACCESS_TOKEN is not set."
     assert job_id is not None, "PIPELINE_JOB_ID is not set."
     assert server_host_name is not None, "SERVER_HOSTNAME is not set."
