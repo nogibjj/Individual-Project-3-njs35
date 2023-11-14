@@ -31,6 +31,14 @@ jobs:
       
     - name: Run tests
       run: make test
+      env: 
+        DATABRICKS_ACCESS_TOKEN: ${{ secrets.DATABRICKS_ACCESS_TOKEN }}
+        PIPELINE_JOB_ID: ${{ secrets.PIPELINE_JOB_ID }}
+        SERVER_HOSTNAME: ${{ secrets.SERVER_HOSTNAME }}
 
     - name: Trigger Databricks Pipeline
       run: make run
+      env: 
+        DATABRICKS_ACCESS_TOKEN: ${{ secrets.DATABRICKS_ACCESS_TOKEN }}
+        PIPELINE_JOB_ID: ${{ secrets.PIPELINE_JOB_ID }}
+        SERVER_HOSTNAME: ${{ secrets.SERVER_HOSTNAME }}
