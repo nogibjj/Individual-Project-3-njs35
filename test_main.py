@@ -1,4 +1,4 @@
-from src.main import func
+from main import func
 
 
 def test_func():
