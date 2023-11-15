@@ -20,7 +20,7 @@ def run_job(access_token, job_id, server_host_name):
 
     # Check the response status code
     if response.status_code == 200:
-        print("Databricks job run successfully triggered...")
+        print("Databricks job run successfully triggered....")
     else:
         print(f"Error: {response.status_code}, {response.text}")
 
