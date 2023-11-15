@@ -2,6 +2,8 @@
 
 # Databricks ETL Pipeline
 
+[Video Walkthrough](https://youtu.be/OLRUwx7hSXQ)
+
 ## Project Overview
 The Databricks pipeline created in the project extracts, transforms, and a [2015 NBA draft dataset](https://github.com/fivethirtyeight/data/raw/master/nba-draft-2015/historical_projections.csv). The pipeline takes advantage of Delta Lake's unique capabilities such as metadata management and ACID transactions. Addtionally, this pipeline can be automatically triggered via the Databricks api. The CI process for this project's repository will trigger a pipeline run on a push to the main branch.
 
