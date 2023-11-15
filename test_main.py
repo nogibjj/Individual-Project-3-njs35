@@ -1,7 +1,6 @@
 import os
 import requests
 from dotenv import load_dotenv
-from main import run_job
 
 load_dotenv()
 
